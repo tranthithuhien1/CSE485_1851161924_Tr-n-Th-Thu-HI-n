@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-     <ul>
-     <div>
+      <nav class="navbar navbar-expand-sm navbar-light bg-success text-white">
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+              
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Guest</a>
                       <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -19,10 +20,10 @@
                           <a class="dropdown-item" href="register-page.php">Register</a>
                       </div>
                   </li>
-              </ul>
+        
               
           </div>
-     
+      </nav>
       <main>
             <div class="container">
                 <div class="row">
