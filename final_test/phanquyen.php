@@ -20,7 +20,7 @@
 <!-- BEGIN: HEADER -->
 <div id="ja-header" class="clearfix"style="height: 100px;">
 	<h1 class="logo">
-		<a href="index.html">
+		<a href="index.php">
 			<img src="final test/images/logo (1).jpg" alt="">
 		</a>
 	</h1>

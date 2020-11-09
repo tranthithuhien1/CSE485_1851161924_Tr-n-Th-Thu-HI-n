@@ -88,7 +88,7 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
   <![endif]-->
   
   <!-- build:js assets/js/lib/modernizr.js-->
-  <script src="/assets/js/lib/modernizr.3.0.0-alpha.min.js"></script>
+  <script src="/final test/js/modernizr.3.0.0-alpha.min.js"></script>
   <!-- endbuild-->
 
 <div id="siteWrapper" class="wrapper">
