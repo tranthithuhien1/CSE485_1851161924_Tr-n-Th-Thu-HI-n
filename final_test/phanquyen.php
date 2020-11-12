@@ -5,12 +5,12 @@
   <title>Admin fem TLU</title>
 
 
-<link rel="stylesheet" href="css/template.css" type="text/css">
+<link rel="stylesheet" href="assets/css/template.css" type="text/css">
 
 <!-- Menu head -->
-<link href="css/ja.css" rel="stylesheet" type="text/css">
-<link href="css/default.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="assets/css/ja.css" rel="stylesheet" type="text/css">
+<link href="assets/css/default.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 <body id="bd" class="wide fs3">
@@ -21,7 +21,7 @@
 <div id="ja-header" class="clearfix"style="height: 100px;">
 	<h1 class="logo">
 		<a href="index.php">
-			<img src="final test/images/logo (1).jpg" alt="">
+			<img src="assets/images/logo (1).jpg" alt="">
 		</a>
 	</h1>
 </div>

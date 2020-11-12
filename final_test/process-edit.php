@@ -1,13 +1,13 @@
 <?php
-    require_once('connect.php');
-    // include("function.php")
+    require_once('app/database/connect.php');
+    include("function.php")
     $id= $_GET["id"];
     $username=$_POST['username'];
     $password=$_POST['password1'];
     $displayname=$_POST['displayname'];
     $email=$_POST['email'];
    
-    $sql="UPDATE users
+    $sql="UPDATE cse
     SET id='$id',
     username = '$username', 
     password1 = '$password',

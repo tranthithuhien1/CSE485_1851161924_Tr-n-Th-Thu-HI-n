@@ -15,6 +15,7 @@
   <script src="https://kit.fontawesome.com/1e9d4d2468.js" crossorigin="anonymous"></script>
   </head>
   <body>
+  <form action="#" method="post" enctype="multipart/form-data">
       <?php include("app/include/header.php");?>
   <!-- end nav -->
   <div class="container">
@@ -655,8 +656,8 @@
   </div>
   </div>
   </div>
-  </div>
-  <?php include("app/include/footer.php");?>
+  </div> <?php include("app/include/footer.php");?>
+ 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/script.js"></script>

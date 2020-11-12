@@ -1,42 +1,39 @@
-<?php
-require_once('app/database/config.php');
-$sql= "SELECT * FROM fem";
-$result= mysqli_query($conn,$sql);
-?>
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Admin</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    html,body{
+      font-family:'Times New Roman', Times, serif;;
+    }
+  </style>
   </head>
   <body>
-      <div class="container h-100 mt-3">
-        <div class="row h-100 justify-content-center ">
-          <form action="login_submit.php" method="post">
-              <h2>ĐĂNG NHẬP</h2><br>
-              <table>
-                <tr>
-                  <td><label for=""><b>Account :  </b></label></td>
-                  <td><input type="text" name="name"></td>
-                </tr>
-                <tr>
-                  <td><label for=""><b>Password :</b></label></td>
-                  <td><input type="password" name="pass" id=""></td>
-                </tr>
-                <tr>
-                  <td><button type="submit" name="submit" class="btn btn-secondary">Login</button></td>
-                  <td><input type="reset" value="Reset" class="btn btn-outline-secondary"></td>
-                </tr>
-              </table>
-          </form>
-        </div>
-
-      </div>
+   <nav class="navbar navbar-expand-sm bg-secondary ">
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" style="font-size: 18px;margin:22px"href="user.php"><b> User</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
+      </li>
+      <li>
+        <a href="index.php"><i class="fas fa-sign-in-alt fa-2x" style="margin-top: 40px; margin-left:850px; color:aliceblue; " ></i></a>
+      </li>
+      
+    </ul>
+    </nav> 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

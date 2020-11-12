@@ -1,6 +1,6 @@
-<?php   
+<<?php   
     
-    require_once('connect.php');
+    require_once('app/database/connect.php');
     $id=$_GET['id'];
     $sql="SELECT * FROM fem where id=$id";
     $result = mysqli_query($dbcon, $sql);
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-  <?php include("app/include/header.php");?>
     <div class="col-sm-8">
        <h2 class="h2 text-center"> Edit Register</h2>
         <form action='process-edit.php?id=<?php echo $row['id']?>' method="POST" onsubmit="return checked();"name="regform" id="regform">

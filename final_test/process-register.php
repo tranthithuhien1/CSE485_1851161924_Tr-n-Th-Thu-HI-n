@@ -46,7 +46,7 @@ try {
         mysqli_stmt_execute($q);
 		if (mysqli_stmt_affected_rows($q) == 1) {	// One record inserted	#11		
 			// quyen them vao 
-			header( 'location: Login.php');	
+			header( 'location: login.php');	
 			// quyen them vao
 		echo "bạn đã đăng kí thành công";
 		exit();

@@ -6,9 +6,9 @@
         $teacher =mysqli_fetch_all($result);
         return $teacher;
     }
-     function deleteAdmin($id){
+     function deleteAdmin($userid){
         global $dbcon;
-        $sql = "DELETE FROM fem WHERE id = '$id'";
+        $sql = "DELETE FROM fem WHERE userid = '$userid'";
         $result = mysqli_query($dbcon, $sql);
        if($result){
            return TRUE;
@@ -18,9 +18,9 @@
            return FALSE;
        }
     }
-    function editAdmin($id){
+    function editAdmin($userid){
         global $dbcon;
-        $sql = "SELECT * FROM fem WHERE id = '$id'";
+        $sql = "SELECT * FROM fem WHERE userid = '$userid'";
         $result = mysqli_query($dbcon, $sql);
         $teacher = mysqli_fetch_all($result);
         return $teacher;
