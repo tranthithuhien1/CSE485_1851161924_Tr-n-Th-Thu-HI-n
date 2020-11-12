@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Lời chào mừng</title>
+    <title>Thư Ngỏ</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../CSE.css">
-    <link rel="stylesheet" href="../../css/logo.css">
-    <link rel="stylesheet" href="../../css/loichaomung.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/logo.css">
+    <link rel="stylesheet" href="assets/css/thungo.css">
   </head>
   <body>
         <form action="/" method="post" enctype="multipart/form-data">
             <?php 
-            include("../../header.php");
+            include("header.php");
             ?>
             <div class="main" style="margin-top: 3%;">
                 <div class="container">
@@ -33,7 +33,7 @@
                         <div class="col-md-9">
                             <h3>Thư Ngỏ</h3>
                              <?php 
-                                require("app/database/config.php");
+                                require("config.php");
                                 $sql = "SELECT * FROM thungo";
                                 mysqli_set_charset($conn,'UTF8');
                                 $result = mysqli_query($conn,$sql);
@@ -58,18 +58,16 @@
                                 <h4><a href="../gioithieu/gioithieu.php">Giới thiệu</a></h4>
                              </div>
                             <div class="col-md-12 gioithieu1" >
-                                > <a href="../gioithieu/logokhoa.php" class="gioithieu2">   Logo Khoa CNTT</a>
+                                > <a href="app/include/thungo.php" class="gioithieu2">Thư ngỏ</a>
                             </div>
 
                             <div class="col-md-12 gioithieu1">
-                                > <a href="../gioithieu/loichaomung.php" class="gioithieu2">Lời chào mừng </a>
+                                > <a href="app/include/cocautochuc.php" class="gioithieu2">Cơ cấu tổ chức&nhân lực </a>
                             </div>
                              <div class="col-md-12 gioithieu1">
-                            > <a href="../gioithieu/cocautochuc.php" class="gioithieu2">Tổ chức</a>
+                            > <a href="app/include/lichsuhinhthanh.php" class="gioithieu2">Lịch sử hình thành</a>
                             </div>
-                            <div class="col-md-12 gioithieu1">
-                             > <a href="../gioithieu/hoptacquocte.php" class=gioithieu2>Hợp tác liên kết</a>
-                            </div>
+                        
                         
                         </div>
 
@@ -77,7 +75,7 @@
                     </div>
                  <div class="row" style="float: right;margin-right: 20%;">
                         <div class="col-md-12" style="float: right;">
-                            <a href="../gioithieu/loichaomung.php">Trở về đầu trang</a>
+                            <a href="app/include/thungo.php">Trở về đầu trang</a>
                         </div>
                     </div>
                     <div class="row icon" >
@@ -98,7 +96,7 @@
             
                            
                   </div>
-                  <?php include("app/include/footer.php");?>
+                  <?php include("footer.php");?>
                 </div>
               </footer>
         </form>

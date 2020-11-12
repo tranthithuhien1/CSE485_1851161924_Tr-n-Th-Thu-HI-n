@@ -1,7 +1,7 @@
 <?php
-//require('config.php');
-//$sql= "SELECT * FROM fem";
-//$result= mysqli_query($conn,$sql);
+require('config.php');
+$sql= "SELECT * FROM post";
+$result= mysqli_query($conn,$sql);
 
 ?>
 <!-- <script>alert('ban da dang nhap thanh cong');</script> -->
@@ -73,8 +73,8 @@
                 <td><?php echo $row ['displayname']; ?></td>
                 <td><?php echo $row ['email']; ?></td>
                 <td><?php echo $row ['registration_date']; ?></td>
-                <td><button onclick="window.open('edit.php?id=<?php echo $row['id']; ?>','_self')">edit</button></td>
-                <td><button onclick="window.open('delete.php?id=<?php echo $row['id']; ?>','_self')">delete</button></td>
+                <td><button onclick="window.open('edit.php?userid=<?php echo $row['userid']; ?>','_self')">edit</button></td>
+                <td><button onclick="window.open('delete.php?userid=<?php echo $row['userid']; ?>','_self')">delete</button></td>
             </tr>
             
           <?php 

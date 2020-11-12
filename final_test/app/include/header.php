@@ -58,9 +58,9 @@
       <li class="dropdown">
         <a href="#" class="nav-menu">GIỚI THIỆU</a>
         <ul class="dropdown-content">
-          <li><a href="http://127.0.0.1:5500/final%20test/trang%20con/thungo.html">Thư ngỏ </a></li>
-          <li><a href="http://127.0.0.1:5500/final%20test/trang%20con/co-cau-to-chuc.html">Cơ cấu tổ chức & nhân lực </a></li>
-          <li><a href="http://127.0.0.1:5500/final%20test/trang%20con/lichsuhinhthanh.html">Lịch sử hình thành </a></li>s
+          <li><a href="thungo.php">Thư ngỏ </a></li>
+          <li><a href="cocautochuc.php">Cơ cấu tổ chức & nhân lực </a></li>
+          <li><a href="lichsuhinhthanh.php">Lịch sử hình thành </a></li>
         </ul>
       </li>
       <li class="dropdown">
