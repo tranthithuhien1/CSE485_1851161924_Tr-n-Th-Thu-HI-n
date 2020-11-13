@@ -1,3 +1,8 @@
+<?php
+require_once('app/database/config.php');
+$sql= "SELECT * FROM fem";
+$result= mysqli_query($conn,$sql);
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,28 +17,33 @@
     <link rel="stylesheet" href="assets/css/Login.css">
   </head>
   <body>
+  
   <?php include("app/include/header.php");?>
+  <?php
+
+?>
+<form action="login-submit.php"  method="POST" >
         <div class="main">
             <div class="container ">
                 <div class="row ">
                     <a  href="" class="username">
                         Username:
                     </a>
-                    <div class="" >
-                        <input type="text" class="username1">
+                    <div class="form-group" >
+                        <input type="text" id="username" name="username" class="username">
                     </div>
                 </div>
                 <div class="row ">
-                    <a  href="" class="password" style="padding-right:5px">
+                    <a  href="" id="password" class="password" name="password" style="padding-right:5px">
                         Password:
                     </a>
-                    <div class="password1">
+                    <div class="from-group">
                         <input type="text">
                     </div>
                 </div>
                 <div class="row ">
-                    <a href="">
-                        <button type="submit" class="bg-primary Login text-white ">Login</button>
+                    <a href="process-login.php">
+                        <button name="button" type="submit" class="bg-primary Login text-white ">Login</button>
                     </a>
                     <a href="http://fem.tlu.edu.vn/">
                         <button class="Cancel ">Cancel</button>

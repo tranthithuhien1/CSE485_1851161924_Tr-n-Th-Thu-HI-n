@@ -20,7 +20,7 @@
 <!-- BEGIN: HEADER -->
 <div id="ja-header" class="clearfix" style="height: 100px;">
 	<h1 class="logo">
-		<a href="../index.php" title="">
+		<a href="index.php" title="">
 			<img src="assets/images/logo.jpg" alt="">
 		</a>
 	</h1>
@@ -109,9 +109,9 @@
 						</tr>
 						
 					</table>
-					<div class="task"><a href="themuser.php"><input type="button" value="Thêm mới" name="Thêm mới"></a>
+					<div class="task"><a href="add.php"><input type="button" value="Thêm mới" name="Thêm mới"></a>
 									<input type="button" name="Xóa" value="Xóa"> 
-									<a href="suauser.php"><input type="button" name="Cập nhật" value="Cập nhật"></a>
+									<a href="edit.php"><input type="button" name="Cập nhật" value="Cập nhật"></a>
 					</div>
 			    </div>
 <!-- END: CONTENT -->
@@ -126,7 +126,7 @@
 			<li id="current" class="active item1"><a href="user.php">Quản trị người sử dụng</a></li>
 			<li class="item82"><a href="phanquyen.php">Phân quyền người sử dụng</a></li>
 			<li class="item83"><a href="log.php">Quản lý log</a></li>
-			<li class="item85"><a href="dsmonhoc.php"><a href="changepass.html">Đổi mật khẩu</a></li>			
+			<li class="item85"><a href="dsmonhoc.php"><a href="changepass.php">Đổi mật khẩu</a></li>			
 			</ul>		
 	</div>
 

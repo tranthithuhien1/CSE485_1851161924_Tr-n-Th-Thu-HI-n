@@ -1,19 +1,19 @@
 <?php
     require_once('app/database/connect.php');
-    include("function.php")
-    $id= $_GET["id"];
+    include("app/database/function.php")
+    $userid= $_GET["userid"];
     $username=$_POST['username'];
     $password=$_POST['password1'];
     $displayname=$_POST['displayname'];
     $email=$_POST['email'];
    
-    $sql="UPDATE cse
-    SET id='$id',
+    $sql="UPDATE fem
+    SET userid='$userid',
     username = '$username', 
     password1 = '$password',
     displayname = '$displayname',
     email = '$email',
-    WHERE id=$id";
+    WHERE userid=$userid";
     if (mysqli_query($dbcon, $sql)) {
         header('location: hethong.php ');
     } else {

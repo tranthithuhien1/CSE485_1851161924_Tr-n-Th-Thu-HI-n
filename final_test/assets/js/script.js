@@ -60,3 +60,27 @@ $(document).ready(function(){
     })
     
 });
+// bar responsive
+// nav mobile
+$(document).ready(function () {
+    $("#respon-bar").click(function(){
+        $(".navbar-mobile").fem("transform","translate(0%)");
+        // $(".navbar-mobile").slideToggle();
+        // $(".dropdown-menu a ").css("display","none");
+    });
+    $(".nav-mobile-close").click(function(){
+        $(".navbar-mobile").fem("transform","translate(-100%)");
+    });
+// search mobile
+    $("#search1").click(function(){
+        $(".search-mobile").fem("display","block");
+        $(".search-mobile .search-frame").fem("display","block");
+        $(".search-mobile .btn-close").fem("display","block");
+    });
+    $(".btn-close").click(function(){
+        $(".search-mobile").fem("display","none");
+        $(".search-mobile .search-frame").fem("display","none");
+        $(".search-mobile .btn-close").fem("display","none");
+    });
+    
+});

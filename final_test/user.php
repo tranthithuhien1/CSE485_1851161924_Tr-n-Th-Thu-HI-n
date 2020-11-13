@@ -1,6 +1,6 @@
 <?php
-require('config.php');
-$sql= "SELECT * FROM post";
+require('app/database/config.php');
+$sql= "SELECT * FROM fem";
 $result= mysqli_query($conn,$sql);
 
 ?>
@@ -36,7 +36,7 @@ $result= mysqli_query($conn,$sql);
         <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
       </li>
       <li>
-        <a href="index.php"><i class="fas fa-sign-in-alt " style="margin-top: 30px; margin-left:850px; color:aliceblue; font-size: 18px " ></i></a>
+        <a href="path.php"><i class="fas fa-sign-in-alt " style="margin-top: 30px; margin-left:850px; color:aliceblue; font-size: 20px " ></i></a>
       </li>
       
     </ul>

@@ -1,12 +1,12 @@
-<?php
+  <?php
     // Kiem tra
     $errors = array();
-    $email = $_POST['txtEmail'];
-	if (empty($email)) {
+    $username = $_POST['username'];
+	if (empty($username)) {
 		$errors[] = 'You forgot to enter your email address.';
     }
 
-    $password = $_POST['txtPassword'];
+    $password = $_POST['password'];
 	
 	if (empty($password)) {	
 			$errors[] = 'Your two password did not match.';
@@ -19,7 +19,7 @@
             die('Khong the ket noi');
         }
         // B2: Khai bao cau truy van
-        $sql = "SELECT * FROM users WHERE email='$email'";
+        $sql = "SELECT * FROM fem WHERE username='$username'";
         // echo $sql;
         $result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result)>0){

@@ -23,7 +23,7 @@ $row=mysqli_fetch_assoc($query);
         <form action="" method="post">
              <div class="form-group">
                 <label for="">userid</label>
-                <input type="number"  id="userid" name="userid"value="<?php echo $row['userid'] ; ?>">
+                <input type="text"  id="userid" name="userid"value="<?php echo $row['userid'] ; ?>">
             </div> 
             <div class="form-group">
                 <label for="">Username</label>
@@ -51,19 +51,14 @@ $row=mysqli_fetch_assoc($query);
                 if (isset($_POST['update'])){
                 $userid=$_GET['userid'];
                 $username=$_POST['username'];
-               
                 $password=$_POST['password'];
                 $displayname=$_POST['displayname'];
                 $email=$_POST['email'];
                 $registration_date=$_POST['registration_date'];
                 $conn = new mysqli("localhost", "root", "", "blog");
                 
-                if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-                }
-                
-                $sql = "UPDATE fem SET usename='$username', password='$password',displayname='$displayname', email='$eamil', registration_date='$registration_date' WHERE userid='$userid'";
-                
+                $sql = "UPDATE fem SET username='$username', password='$password',displayname='$displayname', email='$email', registration_date='$registration_date' WHERE userid='$userid'";
+                        
                 if ($conn->query($sql) === TRUE) {
                  ?> <script> alert('Đã Cập Nhật Thành Công'); </script><?php
                 } else {

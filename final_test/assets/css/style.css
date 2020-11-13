@@ -37,7 +37,7 @@ a:hover{
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
-    background: #f2f7f9 url(../images/bg-input-search.png) repeat-x 0 0;
+    background: #f2f7f9 url(assets/images/bg-input-search.png) repeat-x 0 0;
     border: 1px solid #d2dee3;
     display: inline-block;
     font-size: 13px;

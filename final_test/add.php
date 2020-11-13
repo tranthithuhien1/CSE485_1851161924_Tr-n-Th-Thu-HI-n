@@ -20,7 +20,7 @@ if(!empty($_POST)){
     if(isset($_POST['email'])){
         $email=$_POST['email'];
     }
-    if(isset($_POST['registration_date'])){
+   if(isset($_POST['registration_date'])){
         $registration_date=$_POST['registration_date'];
     }
 /*     $id=str_replace('\'','\\\'',$id);
@@ -29,7 +29,7 @@ if(!empty($_POST)){
     $email=str_replace('\'','\\\'',$email);
     $gender=str_replace('\'','\\\'',$gender); */
     
-    $sql="INSERT INTO fem(userid,username,,displayname,email,registration_date) 
+    $sql="INSERT INTO fem(userid,username,password,displayname,email,registration_date) 
     value('$userid','$username','$password','$displayname','$email','$registration_date')";
     
     echo ' Dữ liệu bạn vừa thêm là :'.'<br>'.' userid: '.$userid .'<br>'.'username:'.$username .'<br>'
@@ -66,7 +66,7 @@ if(!empty($_POST)){
                 <table>
                     <tr>
                         <td><label for=""><b>Userid :</b></label></td>
-                        <td><input type="number"  id="userid" name="userid"></td>
+                        <td><input type="text"  id="userid" name="userid"></td>
                     </tr>
                     <tr>
                         <td><label for=""><b>Username :</b></label></td>
@@ -85,8 +85,8 @@ if(!empty($_POST)){
                         <td><input type="text" id="email" name="email"  ></td>
                     </tr>
                     <tr>
-                        <td><label for=""><b>Registration_date :</b></label></td>
-                        <td><textarea name="registration_date" id="registration_date" rows="4" cols="25" ></textarea></td>
+                    <td><label for=""><b>Registration_date :</b></label></td>
+                     <td><input type="text" id="registration_date :" name="registration_date :"  ></td>
                     </tr>
                     <tr>
                         <td>
