@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 13, 2020 lúc 03:40 PM
+-- Thời gian đã tạo: Th10 13, 2020 lúc 04:01 PM
 -- Phiên bản máy phục vụ: 10.4.14-MariaDB
 -- Phiên bản PHP: 7.2.33
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Cơ sở dữ liệu: `blog`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `cctc`
+--
+
+CREATE TABLE `cctc` (
+  `id` int(11) UNSIGNED NOT NULL,
+  `name` text NOT NULL,
+  `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `cctc`
+--
+
+INSERT INTO `cctc` (`id`, `name`, `content`) VALUES
+(1, 'Hội đồng Khoa học và đào tạo Khoa', 'Hội đồng Khoa học và Đào tạo gồm Ban lãnh đạo Khoa các Trưởng Bộ môn, các nhà Khoa học và giảng viên có uy tín và chuyên môn sâu trong đào tạo và nghiên cứu khoa học trong và ngoài nhà trường. Hội đồng Khoa học và Đào tạo chịu trách nhiệm tư vấn cho Ban Chủ nhiệm Khoa xây dựng và phát triển nội dung chương trình đào tạo; định hướng các hoạt động nghiên cứu khoa học và chuyển giao tri thức; xây dựng chiến lược phát triển chung của Khoa.');
 
 -- --------------------------------------------------------
 
@@ -118,6 +137,12 @@ INSERT INTO `thungo` (`id`, `content`) VALUES
 --
 
 --
+-- Chỉ mục cho bảng `cctc`
+--
+ALTER TABLE `cctc`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Chỉ mục cho bảng `fem`
 --
 ALTER TABLE `fem`
@@ -144,6 +169,12 @@ ALTER TABLE `thungo`
 --
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
+
+--
+-- AUTO_INCREMENT cho bảng `cctc`
+--
+ALTER TABLE `cctc`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `fem`
