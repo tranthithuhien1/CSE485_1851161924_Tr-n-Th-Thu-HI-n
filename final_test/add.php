@@ -61,8 +61,8 @@ if(!empty($_POST)){
   <body>
       <div class="container h-100 mt-3">
         <div class="row h-100 justify-content-center ">
-            <form action="" method="post">
-                <h2>THÊM MỚI</h2><br>
+            <form action="user.php" method="post">
+                <h3>THÊM MỚI NGƯỜI DÙNG</h3><br>
                 <table>
                     <tr>
                         <td><label for=""><b>Userid :</b></label></td>

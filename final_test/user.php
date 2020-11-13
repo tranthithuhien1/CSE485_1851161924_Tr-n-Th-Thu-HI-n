@@ -36,7 +36,7 @@ $result= mysqli_query($conn,$sql);
         <a class="nav-link text-white"style="font-size: 18px;margin:22px" href="search.php"><b> Tìm Kiếm</b> </a>
       </li>
       <li>
-        <a href="path.php"><i class="fas fa-sign-in-alt " style="margin-top: 30px; margin-left:850px; color:aliceblue; font-size: 20px " ></i></a>
+        <a href="index.php"><i class="fas fa-sign-in-alt " style="margin-top: 30px; margin-left:850px; color:aliceblue; font-size: 20px " ></i></a>
       </li>
       
     </ul>
@@ -47,7 +47,7 @@ $result= mysqli_query($conn,$sql);
   
     <div class="text-center">
           
-      <h1>QUẢN LÝ USER</h1> <br> 
+      <h3>Quản lý người dùng</h3> <br> 
       
     </div>
     <table class="table table-bordered table-striped ">

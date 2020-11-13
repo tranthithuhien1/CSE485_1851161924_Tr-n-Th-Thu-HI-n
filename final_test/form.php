@@ -20,7 +20,7 @@
    <nav class="navbar navbar-expand-sm bg-secondary ">
     <ul class="navbar-nav ">
       <li class="nav-item">
-        <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="form.php"> <b> Trang Chủ </b></a>
+        <a class="nav-link text-white " style="font-size: 18px; margin:22px" href="index.php"> <b> Trang Chủ </b></a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-white" style="font-size: 18px;margin:22px"href="user.php"><b> User</b></a>

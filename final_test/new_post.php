@@ -24,7 +24,7 @@ if(!empty($_POST)){
         $thoigiandang=$_POST['thoigiandang'];
     }
     
-    $sql="INSERT INTO baiviet(id,chude,noidung,hinhanh,tacgia,thoigiandang) 
+    $sql="INSERT INTO posts(id,chude,noidung,hinhanh,tacgia,thoigiandang) 
     value('$id','$chude','$noidung','$hinhanh','$tacgia','$thoigiandang')";
     
     

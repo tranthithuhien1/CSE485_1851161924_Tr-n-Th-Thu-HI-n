@@ -58,9 +58,9 @@
       <li class="dropdown">
         <a href="#" class="nav-menu">GIỚI THIỆU</a>
         <ul class="dropdown-content">
-          <li><a href="thungo.php">Thư ngỏ </a></li>
+          <li><a href="app/include/thungo.php">Thư ngỏ </a></li>
           <li><a href="cocautochuc.php">Cơ cấu tổ chức & nhân lực </a></li>
-          <li><a href="lichsuhinhthanh.php">Lịch sử hình thành </a></li>
+          <li><a href="app/include/lichsuhinhthanh.php">Lịch sử hình thành </a></li>
         </ul>
       </li>
       <li class="dropdown">

@@ -15,7 +15,7 @@
     email = '$email',
     WHERE userid=$userid";
     if (mysqli_query($dbcon, $sql)) {
-        header('location: hethong.php ');
+        header('location: user.php ');
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($dbcon);
     }
